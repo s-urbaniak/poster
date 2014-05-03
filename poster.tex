@@ -20,18 +20,23 @@
 %----------------------------------------------------------------------------------------
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
-
 \documentclass[final]{beamer}
 \usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
+\usepackage{fixltx2e}
+\usepackage{caption}
+\usepackage{graphicx}  % Required for including images
+\usepackage{booktabs} % Top and bottom rules for tables
+%-----------------------------------------------------------
 \usetheme{confposter} % Use the confposter theme supplied with this template
+%-----------------------------------------------------------
 \setbeamercolor{block title}{fg=ngreen,bg=white} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
 \setbeamercolor{block alerted title}{fg=white,bg=dblue!70} % Colors of the highlighted block titles
 \setbeamercolor{block alerted body}{fg=black,bg=dblue!10} % Colors of the body of highlighted blocks
+%-----------------------------------------------------------
 % Many more colors are available for use in beamerthemeconfposter.sty
-%
 %-----------------------------------------------------------
 % Define the column widths and overall poster size
 % To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
@@ -46,25 +51,16 @@
 \setlength{\paperwidth}{48in} % A0 width: 46.8in
 \setlength{\paperheight}{36in} % A0 height: 33.1in
 \setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
-\setlength{\onecolwid}{0.301\paperwidth} % Width of one column
-\setlength{\twocolwid}{0.602\paperwidth} % Width of two columns
+\setlength{\onecolwid}{0.300\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.608\paperwidth} % Width of two columns
 %\setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
 \setlength{\topmargin}{-0.5in} % Reduce the top margin size
 %-----------------------------------------------------------
-\usepackage{graphicx}  % Required for including images
-\usepackage{booktabs} % Top and bottom rules for tables
-
-%----------------------------------------------------------------------------------------
-%   TITLE SECTION 
-%----------------------------------------------------------------------------------------
-
 
 
 \title{Der Experteneffekt: Grenzen kooperativen Lernens in der Primarstufe?} % Poster title
 \author{Olga Urbaniak} % Author(s)
 \institute{FU Berlin} % Institution(s)
-
-
 
 
 \begin{document}
@@ -76,22 +72,14 @@
 \begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
 
 
-
-
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 \begin{column}{\onecolwid} % The first column
-
-
-
 
 \begin{block}{Ausgangspunkt}
 Hinsichtlich der Lernleistungen  belegen Metaanalysen die positiven Effekte kooperativer Lehr- und Lernmethoden (Johnson, Johnson \& Stanne, 2000; Rohrbeck, Ginsburg-Block, Fantuzzo \& Miller, 2003; Slavin 1995). Die berichteten Effekte variieren allerdings stark, und über Wirkmechanismen des Wissenserwerbsprozesses beim kooperativen Lernen ist nur wenig bekannt. Untersuchungen mit jüngeren Schülerinnen und Schülern werden relativ selten durchgeführt. 
 
 Ziel der Studie ist den Prozess des Wissenserwerbs beim kooperativen Lernen bei jüngeren Schülerinnen und Schülern näher zu untersuchen. Dazu wird die kooperative Methode des Gruppenpuzzles (Aronson, Blaney, Stephan, Sikes, \& Snapp, 1978) in der dritten Klassenstufe eingesetzt.
 \end{block}
-
-
-
 
 \begin{alertblock}{Gruppenpuzzle}
 \textbf{Erarbeitunsphase} Lernstoff wird in verschiedene Teilgebiete aufgeteilt. Jede Schülerin bzw. jeder Schüler einer Klasse, die zuvor in Stammgruppen (A-D) zu vier Mitgliedern eingeteilt wurden, erarbeitet jeweils ein Teilgebiet. 
@@ -102,21 +90,10 @@ Ziel der Studie ist den Prozess des Wissenserwerbs beim kooperativen Lernen bei 
 \end{alertblock}
 
 
-
-
 \begin{figure}
 \includegraphics[width=1.0\linewidth]{experteneffekt.jpg}
 \caption{Wissenserwerbsprozess im Gruppenpuzzle in einer sechsstündigen Sachunterrichtseinheit der Primarstufe}
 \end{figure}
-
-\end{column} % End of the first column
-\begin{column}{\sepwid}\end{column} % Empty spacer column
-
-\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
-\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
-\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
-
-
 
 
 \begin{block}{Fragestellungen}
@@ -128,117 +105,83 @@ Ziel der Studie ist den Prozess des Wissenserwerbs beim kooperativen Lernen bei 
 \end{block}
 
 
+\end{column} % End of the first column
+\begin{column}{\sepwid}\end{column} % Empty spacer column
 
 
-%----------------------------------------------------------------------------------------
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+
+
+\begin{table}
+\begin{tabular}{lccc}
+\toprule 
+ & \multicolumn{3}{c}{Studie 1} \\
+ & d\textsubscript{Experten - Nichtexperten} & d\textsubscript{Experten - Kontrolle} & d\textsubscript{Nichtexperten - Kontrolle} \\
+\midrule 
+\textbf{Ma 1} & 0.24 & 0.37 & 0.04 \\
+\textbf{Ma 2} & 0.34 & -0.02 & -0.32 \\
+\textbf{Ma 3} & 0.26 & 0.41 & -0.07 \\
+\midrule 
+\textbf{Gesamt} & 0.28 & 0.25 & -0.12 \\
+\bottomrule
+\end{tabular}
+{\caption*{Anm.: Positive Werte bedeuten jeweils eine Überlegenheit der vorne stehenden Gruppierung.}}
+\end{table}
 
 \end{column} % End of column 2.1
+
 
 \begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
 
-%----------------------------------------------------------------------------------------
-%   METHODS
-%----------------------------------------------------------------------------------------
-
-\begin{block}{Methods}
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum, et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
-\end{block}
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.2
-
-\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
-
-%----------------------------------------------------------------------------------------
-%   IMPORTANT RESULT
-%----------------------------------------------------------------------------------------
-
-\begin{alertblock}{Important Result}
-
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit.
-
-\end{alertblock} 
-
-%----------------------------------------------------------------------------------------
-
-\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
-
-\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
-
-%----------------------------------------------------------------------------------------
-%   MATHEMATICAL SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{block}{Mathematical Section}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-  
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname}
-\end{equation}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-
-\begin{equation}
-\kappa =\frac{\xi}{E_{\mathrm{max}}} %\mathbb{ZNR}
-\end{equation}
-
-\end{block}
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.1
-
-\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
-
-%----------------------------------------------------------------------------------------
-%   RESULTS
-%----------------------------------------------------------------------------------------
-
-\begin{block}{Results}
-
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-\caption{Figure caption}
-\end{figure}
-
-Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
 
 \begin{table}
-\vspace{2ex}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
+\begin{tabular}{lccc}
+\toprule 
+ & \multicolumn{3}{c}{Studie 2} \\
+ & d\textsubscript{Experten - Nichtexperten} & d\textsubscript{Experten - Kontrolle} & d\textsubscript{Nichtexperten - Kontrolle} \\
+\midrule 
+\textbf{Sa l} & 0.68 & 1.21 & 0.52 \\
+\textbf{Sa 2} & 0.41 & 0.23 & -0.09 \\
+\textbf{Sa 3} & 0.40 & 0.79 & 0.28 \\
+\textbf{Sa 4} & 1.16 & 0.29 & -0.89 \\
+\textbf{Sa 5} & 0.76 & 0.35 & -0.48 \\
+\textbf{Sa 6} & 0.74 & 0.72 & -0.05 \\
+\midrule 
+\textbf{Gesamt} & 0.69 & 0.60 & -0.12 \\
 \bottomrule
 \end{tabular}
-\caption{Table caption}
+{\caption*{Anm.: Positive Werte bedeuten jeweils eine Überlegenheit der vorne stehenden Gruppierung.}}
 \end{table}
 
-\end{block}
-
-%----------------------------------------------------------------------------------------
 
 \end{column} % End of column 2.2
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+
+\begin{alertblock}{Auswertungsverfahren}
+Als Indikatoren für den Wissenszuwachs werden die individuellen Differenzwerte zwischen Vor- und Nachkenntnisleistungen herangezogen. Um Experteneffekt überprüfen, werden für jeden Expertenbereich einer Unterrichtseinheit die mittleren Wissenszuwächse der Experten, der Nichtexperten und der lehrergeleitet Lernenden bestimmt. Da die Testwerte der Schülerinnen und Schüler in den verschiedenen Expertenbereiche nicht direkt miteinander vergleichbar sind, werden die jeweiligen Effekte über die Effektgrößen (d) bestimmt.
+\end{alertblock} 
+
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+%
+%
+%
+\end{column} % End of column 2.1
+
+
+\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
+%
+%
+%
+\end{column} % End of column 2.2
+
 
 \end{columns} % End of the split of column 2
-
 \end{column} % End of the second column
-
 \end{columns} % End of all the columns in the poster
-
 \end{frame} % End of the enclosing frame
-
 \end{document}
